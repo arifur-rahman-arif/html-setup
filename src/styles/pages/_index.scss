@@ -1,0 +1,152 @@
+@import '../modules/variable';
+@import "../modules/mixin/buttonDesign";
+
+.cards_background {
+    background-color: $primaryBackground;
+    height: 400px;
+    margin: 300px auto 0 auto;
+    border-radius: $primaryBorderRadius;
+    position: relative;
+    @media screen and(min-width: 1800px) {
+        max-width: calc(100% - 320px);
+    }
+    @media screen and(max-width: 1700px) {
+        max-width: calc(100% - 120px);
+    }
+    @media screen and(max-width: 1500px) {
+        max-width: calc(100% - 60px);
+    }
+    @media screen and(max-width: 1400px) {
+        height: auto;
+        padding: 30px 0 35px 0;
+        margin: 0;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .card_container {
+        position: relative;
+        transform: translateY(-40%);
+        margin: 0 auto;
+        display: grid;
+        gap: 25px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @media screen and(min-width: 1800px) {
+            padding: 0 100px;
+        }
+        @media screen and(max-width: 1700px) {
+            padding: 0 50px;
+        }
+        @media screen and(max-width: 1500px) {
+            padding: 0 30px;
+        }
+        @media screen and(max-width: 1400px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            transform: none;
+        }
+        @media screen and(max-width: 970px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and(max-width: 700px) {
+            grid-template-columns: 1fr;
+        }
+
+        .card_topper {
+            background: #c7061b;
+            color: #fff;
+            width: calc(100% - 40px);
+            margin: 0 auto;
+            border-radius: 5px 5px 0 0;
+            position: relative;
+            transform: translateY(0.5px);
+            padding: 10px 0;
+
+            h3 {
+                font-size: 16px;
+            }
+        }
+        .card {
+            border-radius: $primaryBorderRadius;
+        }
+
+        .ecommerce_startup{
+            font-size: 25px;
+        }
+
+        .first_two_month_text{
+            font-size: 14px;
+        }
+        p,
+        a,
+        strong,
+        i {
+            color: $secondaryTextColor;
+        }
+    }
+
+    .big_free_text {
+        color: #c7061b;
+        font-size: 44px;
+    }
+
+    .pricing_condition_wrapper {
+        .pricing_condition {
+            a {
+                text-decoration: underline;
+                color: $secondaryTextColor;
+            }
+        }
+    }
+
+    .card_button {
+       @include buttonDesign;
+    }
+}
+
+.bottom_section{
+    background-color: $primaryBackground;
+    width: 100%;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+
+    @media screen and(max-width: 970px) {
+        margin: 70px auto 0 auto;
+    }
+    @media screen and(max-width: 700px) {
+        margin: 50px auto 0 auto;
+    }
+
+    .website_templates{
+        margin-top: 80px;
+        color: #cbd0d9;
+        font-size: 20px;
+    }
+
+    .large_text{
+        color: #ffffff;
+        font-size: 35px;
+    }
+
+    .long_paragraph_text {
+        font-size: 18px;
+        font-weight: bold;
+        color: #cbd0d9;
+        letter-spacing: 1px;
+        @media screen and(min-width: 1800px) {
+            max-width: calc(100% - 700px);
+        }
+
+        @media screen and(max-width: 1800px) {
+            max-width: calc(100% - 400px);
+        }
+
+        @media screen and(max-width: 1600px) {
+            max-width: calc(100% - 20px);
+        }
+    }
+
+    .all_templates_button{
+        @include buttonDesign;
+    }
+}

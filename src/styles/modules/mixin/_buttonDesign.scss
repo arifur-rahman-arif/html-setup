@@ -1,0 +1,10 @@
+@import "../variable";
+
+@mixin buttonDesign {
+  background: $btnBackground;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-top: 10px !important;
+}

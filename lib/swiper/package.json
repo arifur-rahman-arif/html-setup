@@ -1,0 +1,56 @@
+{
+  "name": "swiper",
+  "version": "0.1.0",
+  "private": true,
+
+  "scripts": {
+    "dev": "webpack --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "dependencies": {
+    "@types/node": "^17.0.27",
+    "@types/react": "^18.0.7",
+    "@types/react-dom": "^18.0.2",
+    "swiper": "^8.2.4",
+    "typescript": "^4.7.4",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/plugin-transform-runtime": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "babel-loader": "^8.2.5",
+    "browser-sync": "^2.27.10",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss-loader": "^7.0.0",
+    "postcss-preset-env": "^7.7.2",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "svg-url-loader": "^7.1.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
