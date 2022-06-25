@@ -17,8 +17,8 @@
         <script src="https://kit.fontawesome.com/b2468909e4.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="build/styles/main.min.css" />
-        <link rel="stylesheet" href='lib/swiper/build/styles/main.min.css' />
-        <script src="build/scripts/main.min.js"></script>
+<!--        <link rel="stylesheet" href='lib/swiper/build/styles/main.min.css' />-->
+        <script src="build/scripts/main.min.js" defer></script>
     </head>
     <body>
         <main>
@@ -274,18 +274,42 @@
                         </button>
                     </div>
 
-                    <div class='col-12 mt-5 pt-3 text-center' id='react_swiper'>
+                    <div class='col-12 mt-5 pt-3 text-center position-relative swiper-element'>
+                        <div #swiperRef="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src='https://images.unsplash.com/photo-1656025896900-cacd4635cd07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='demo-image' />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='https://images.unsplash.com/photo-1656057339655-786cadf701a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='demo-image' />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='https://images.unsplash.com/photo-1656101074548-ef9dd45bd2e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='demo-image' />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='https://images.unsplash.com/photo-1656077885832-4c1308418ee2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80' alt='demo-image' />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='https://images.unsplash.com/photo-1655995883247-94eb0af5ab7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80' alt='demo-image' />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src='https://images.unsplash.com/photo-1655991180173-98fe17e9c4de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='demo-image' />
+                                </div>
+                            </div>
+
+                            <div class='controller_btns'>
+                                <div class="swiper-button-next">
+                                    <img src='assets/icons/right-arrow-svgrepo-com.svg' alt='right-arrow' />
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <img src='assets/icons/left-arrow-svgrepo-com.svg' alt='right-arrow' />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-
-        <!--React CDN-->
-        <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-
-        <!--Swiper-->
-        <script src='lib/swiper/build/index.js'></script>
 
         <!--Browser sync configuration-->
         <script id="__bs_script__">
